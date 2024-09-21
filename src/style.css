@@ -109,6 +109,13 @@ button {
 button:disabled {
     background-color: gray;
 }
+button:disabled:hover {
+    cursor: not-allowed;
+}
+
+button:hover{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1250px) {
 
