@@ -6,7 +6,7 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Portuguese Female', {rate:1});
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1});
 }
 
 function exibirMensagemInicial() {
@@ -55,6 +55,7 @@ function gerarNumeroAleatorio() {
 function limparCampo() {
     chute = document.querySelector('input');
     chute.value = '';
+    chute.focus();
 }
 
 function reiniciarJogo() {
