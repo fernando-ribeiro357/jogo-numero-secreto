@@ -2,7 +2,9 @@ services:
   web:
     build:
       context: .
+      args:
+        - NUMERO_LIMITE=30
     ports:
       - 8080:80
-    volumes:
-      - ./src:/usr/local/apache2/htdocs/
+    # volumes:
+    #   - ./src:/usr/local/apache2/htdocs/
